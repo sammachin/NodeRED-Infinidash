@@ -2,6 +2,10 @@
     "name": "@sammachin/infinidash-nodered",
     "version": "0.0.3",
     "description": "",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/sammachin/nodered-infinidash.git"
+  },
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
