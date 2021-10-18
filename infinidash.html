@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('infinidash',{
+        category: 'sequence',
+        color: '#E6A63B',
+        defaults: {
+            name: {value:""},
+            count: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "icons/infinidash.png",
+        label: function() {
+            return this.name||"infinidash";
+        }
+    });
+</script>
+<script type="text/html" data-template-name="infinidash">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-count"><i class="fa fa-tag"></i> Count</label>
+        <input type="text" id="node-input-count" placeholder="How many messages?">
+    </div>
+</script>
+<script type="text/html" data-help-name="duplicate">
+    <p>A node implements the AWS Infinidash Service</p>
+</script>
